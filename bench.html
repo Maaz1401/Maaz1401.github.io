@@ -1,0 +1,94 @@
+
+
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Solution</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script>
+
+    function myFunction() 
+    {
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+       dropdown[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var dropdownContent = this.nextElementSibling;
+       if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+       } 
+       else {
+      dropdownContent.style.display = "block";
+      }
+     });
+    }
+    }
+    </script>
+</head>
+
+
+<body>
+  <div id="bodyheader">
+  <ul>
+    <li><a href="Assignment1.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+  </ul>
+  </div>
+</header>
+
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <button class="dropdown-btn" onclick="myFunction()">Categories
+    <i class="fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Appliances.html">Home Appliances</a>
+    <a href="Clothing.html">Clothing</a>
+    <a href="Electronics.html">Electronics</a>
+    <a href="Sports.html">Sports and Fitness</a>
+    <a href="Other.html">Other</a>
+  </div>
+</div>
+
+
+
+
+<!-- Page content -->
+<div class="main">
+
+<div id="featured">
+ 
+</div>
+
+<div class="grid-container">
+
+<div class="grid-item">Gym Bench<a href="#"><img src="images/bench.jpg" /></a></div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend fringilla augue, id placerat velit viverra vitae. Nulla nunc arcu, vehicula eget volutpat quis, venenatis ac nibh. Donec id magna at velit lobortis congue ut nec lectus. Curabitur et pellentesque enim, non eleifend dolor. Pellentesque accumsan est nibh, quis molestie arcu iaculis nec. Phasellus tincidunt iaculis pellentesque. Duis placerat cursus elit sit amet efficitur. Curabitur efficitur justo id finibus varius. Praesent porttitor sit amet mauris quis vestibulum. Sed mollis eget purus vitae blandit.
+
+Aliquam vulputate ligula a nunc ultricies luctus. Nulla dui augue, iaculis non tellus a, auctor sollicitudin ipsum. Aliquam vehicula varius odio vel sagittis. Maecenas in vestibulum arcu, eu consectetur tellus. Ut posuere magna vitae dignissim mollis. Phasellus in arcu diam. Nam tristique lectus risus, eget rutrum ex ullamcorper iaculis. Integer aliquam malesuada facilisis. Suspendisse accumsan elementum tortor, et congue lectus ornare aliquam. Fusce pellentesque auctor enim, vel ullamcorper enim bibendum in. Aliquam pulvinar mi eu egestas dictum. Suspendisse sit amet urna luctus, commodo lectus a, consequat tortor. Sed maximus sit amet massa et hendrerit. Quisque et lacus condimentum, euismod dui in, ultrices urna.
+
+In fermentum nunc vitae fringilla finibus. Curabitur at mauris tellus. Integer bibendum ex dolor. Vestibulum nisl augue, tincidunt non porttitor eu, scelerisque sed erat. Morbi ac pretium nunc, quis condimentum lacus. Aliquam faucibus nec magna vitae eleifend. Proin tincidunt faucibus elit at varius. In convallis aliquet lectus, ut volutpat dolor viverra at.
+
+Mauris lacus purus, iaculis vestibulum mauris vel, pulvinar rhoncus sem. Morbi blandit nisl eu arcu elementum, sit amet eleifend dui vestibulum. Curabitur justo nunc, rutrum in elementum vel, aliquam et massa. Vivamus turpis elit, feugiat sit amet augue venenatis, euismod porttitor libero. Mauris facilisis ligula risus. Mauris vitae bibendum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra convallis sollicitudin. Etiam malesuada arcu tincidunt nibh ultrices feugiat. Maecenas ac enim dapibus, tincidunt libero id, dapibus orci. Etiam congue leo a sem fermentum, tempor ultricies massa vehicula. Morbi ullamcorper, nisl vel hendrerit laoreet, neque odio varius tellus, non pharetra nunc est id metus. Aliquam erat volutpat. Aenean vitae feugiat erat, ac faucibus enim. Fusce rutrum mi a elit semper tincidunt. Curabitur vel pharetra nulla.
+
+Etiam consequat finibus mauris nec volutpat. Integer non augue at libero hendrerit egestas. Donec pharetra luctus scelerisque. Duis ac orci et arcu venenatis sagittis sit amet et sapien. Morbi dapibus nunc quis eros tincidunt, eget pharetra sem facilisis. Cras consequat bibendum mattis. Quisque at risus posuere, dignissim eros sed, accumsan lacus. Aliquam posuere risus nec purus sodales interdum. Donec vel massa ac nulla cursus semper. Proin in lectus nec velit pulvinar laoreet. Praesent mollis dictum quam, ac rhoncus enim aliquet sit amet. Morbi eleifend risus a purus convallis ullamcorper cursus sit amet erat. Praesent eget risus mi. Suspendisse potenti.</p>
+
+</div>
+
+
+
+</div>
+
+<footer>
+  Copyright &copy 2019
+</footer>
+
+</body>
+
+</html>

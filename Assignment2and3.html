@@ -1,0 +1,90 @@
+
+
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Solution</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script>
+
+    function myFunction() 
+    {
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+       dropdown[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var dropdownContent = this.nextElementSibling;
+       if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+       } 
+       else {
+      dropdownContent.style.display = "block";
+      }
+     });
+    }
+    }
+    </script>
+</head>
+
+
+<body>
+  <div id="bodyheader">
+  <ul>
+    <li><a href="Assignment1.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="Contact.html">Contact Us</a></li>
+  </ul>
+  </div>
+</header>
+
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <button class="dropdown-btn" onclick="myFunction()">Categories
+    <i class="fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Appliances.html">Home Appliances</a>
+    <a href="Clothing.html">Clothing</a>
+    <a href="Electronics.html">Electronics</a>
+    <a href="Sports.html">Sports and Fitness</a>
+    <a href="Other.html">Other</a>
+  </div>
+</div>
+
+
+
+
+<!-- Page content -->
+<div class="main">
+
+<div id="featured">
+
+<center><strong>FEATURED</strong></center>  
+</div>
+
+<div class="grid-container">
+
+
+
+<div class="grid-item">LG washing machine<a href="washing machine.html"><img src="images/lg washing machine.jpg" /></a></div>
+<div class="grid-item">LG 24 inch TV<a href="tv.html"><img src="images/lg 24 inch.jpg" /></a></div>
+
+
+
+</div>
+
+
+
+</div>
+
+<footer>
+  Copyright &copy 2019
+</footer>
+
+</body>
+
+</html>
